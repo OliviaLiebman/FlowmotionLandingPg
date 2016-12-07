@@ -1,0 +1,137 @@
+
+.whatsflow{
+    background-image: url(../images/whitebg.png);
+    background-size: cover;
+}
+body {
+    background: white;
+}
+.lightboxcontainer {
+    width: 100%;
+    text-align: left;
+    background-color: white!important;
+}
+
+.lightboxleft {
+    width: 40%;
+    float: left;
+}
+
+.lightboxright {
+    width: 60%;
+    float: left;
+}
+
+.lightboxright iframe {
+    min-height: 270px;
+    background-color: white;
+}
+
+.divtext {
+    margin: 36px;
+}
+
+@media (max-width: 800px) {
+    .lightboxleft {
+        width: 100%;
+    }
+
+    .lightboxright {
+        width: 100%;
+    }
+
+    .divtext {
+        margin: 12px;
+    }
+
+    #html5-elem-box {
+        height: 100%;
+        padding-bottom: 2%;
+    }
+}
+
+#html5-watermark {
+    display: none !important;
+}
+
+.divdescription {
+    font-size: 1.6em;
+    line-height: 1em;
+}
+
+.divtext {
+    margin: 0px !important;
+    margin-left: 8% !important;
+    margin-right: 8% !important;
+}
+
+.lightbox {
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+
+#html5-elem-box {
+    height: auto !important;
+}
+
+.innerpivclightbox {
+    width: 75%;
+}
+
+h4 {
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 2%;
+
+}
+
+.row{
+    text-align: center;
+}
+.container {
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+
+
+.navbar-brand>img {
+    display: block;
+    width: 18%;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.navbar {
+    border:0px;
+}
+.navbar-default {
+    background-color: transparent;
+}
+
+.backgroundImg {
+    background-image: url(../images/bigbg.jpg);
+    height: 850px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.meetFlo {
+    margin-top: 14%;
+    margin-left: 5%;
+    background-color: transparent;
+}
+.meet {
+    font-size: 3em;
+}
+.flowMo {
+    font-size: 6em;
+}
+div.aboutFlo {
+    font-size: 1.5em;
+    width: 50%;
+}
