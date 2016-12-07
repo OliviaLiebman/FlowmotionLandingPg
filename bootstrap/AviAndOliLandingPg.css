@@ -1,0 +1,41 @@
+.navbar-brand>img {
+    display: block;
+    width: 18%;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.navbar {
+	border:0px;
+}
+.navbar-default {
+	background-color: transparent;
+}
+.backgroundImg {
+	background-image: url("./bigbg.jpg");
+    height: 900px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*FIX NAV BAR PADDING VVVVV
+*//*.nav.navbar-nav.navbar-right li {
+	padding-top: 0.01em;
+	padding-left: 10%;
+	padding-right: 20%;
+}*/
+.meetFlo {
+	margin-top: 14%;
+	margin-left: 5%;
+	background-color: transparent;
+}
+.meet {
+	font-size: 3em;
+}
+.flowMo {
+	font-size: 6em;
+}
+div.aboutFlo {
+	font-size: 1.5em;
+	width: 50%;
+}
