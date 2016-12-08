@@ -135,3 +135,26 @@ div.aboutFlo {
     font-size: 1.5em;
     width: 50%;
 }
+ ul.iconList {
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+li.icons {
+    list-style-type: none;
+    display: inline;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+/* below is what I've added:
+*/
+element.style {
+    padding-left: 0px;
+}
+
+ul.iconList {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
