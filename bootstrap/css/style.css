@@ -1,57 +1,20 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Teko:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700');
 
-.whatsflow{
+/*free css*/
+.whatsflow {
     background-image: url(../images/whitebg.png);
     background-size: cover;
 }
+
 body {
     background: white;
-}
-.lightboxcontainer {
-    width: 100%;
-    text-align: left;
-    background-color: white!important;
-}
-
-.lightboxleft {
-    width: 40%;
-    float: left;
-}
-
-.lightboxright {
-    width: 60%;
-    float: left;
-}
-
-.lightboxright iframe {
-    min-height: 270px;
-    background-color: white;
 }
 
 .divtext {
     margin: 36px;
-}
-
-@media (max-width: 800px) {
-    .lightboxleft {
-        width: 100%;
-    }
-
-    .lightboxright {
-        width: 100%;
-    }
-
-    .divtext {
-        margin: 12px;
-    }
-
-    #html5-elem-box {
-        height: 100%;
-        padding-bottom: 2%;
-    }
-}
-
-#html5-watermark {
-    display: none !important;
 }
 
 .divdescription {
@@ -65,16 +28,6 @@ body {
     margin-right: 8% !important;
 }
 
-.lightbox {
-    text-align: center;
-    margin-bottom: 2%;
-
-}
-
-#html5-elem-box {
-    height: auto !important;
-}
-
 .innerpivclightbox {
     width: 75%;
 }
@@ -86,52 +39,390 @@ h4 {
 
 }
 
-.row{
+.row {
     text-align: center;
 }
+
 .container {
     padding-bottom: 5%;
     padding-top: 5%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
-
-
-
-.navbar-brand>img {
-    display: block;
-    width: 18%;
-    padding-left: 3%;
-    padding-top: 2%;
-}
 .navbar {
-    border:0px;
+    border: 0px;
 }
+
 .navbar-default {
     background-color: transparent;
 }
 
+.jumbotron {
+    margin-bottom: 0;
+}
+
+#whatstitle {
+    font-size: 34px;
+    font-family: News cycle;
+    padding-bottom: 2%;
+}
+
+#description {
+    font-size: 18px;
+    font-family: News Cycle;
+    width: 80%;
+}
+
 .backgroundImg {
     background-image: url(../images/bigbg.jpg);
-    height: 850px;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
-
 .meetFlo {
-    margin-top: 14%;
+    margin-top: 17%;
+    padding-bottom: 4%;
     margin-left: 5%;
     background-color: transparent;
 }
-.meet {
+
+#meet {
+    font-family: News Cycle;
     font-size: 3em;
 }
-.flowMo {
-    font-size: 6em;
+
+#flowMo {
+    font-family: News Cycle;
+    font-size: 9em;
+    line-height: 0.7em;
 }
+
 div.aboutFlo {
     font-size: 1.5em;
     width: 50%;
+}
+
+.navbar-brand > img {
+    width: 100%;
+    padding-left: 12%;
+}
+
+div.appImg {
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 0;
+}
+.centeredCont {
+    text-align: center;
+    background-color: #efefef;
+}
+
+.icons {
+    display: inline-block;
+    padding: 2%;
+    padding-top: 4%;
+}
+
+.imgbtn {
+    touch-action: manipulation;
+    cursor: pointer;
+    padding: 0;
+}
+
+.container {
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+
+.featurerow {
+    padding-top: 6%;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.product {
+    width: 100%;
+}
+
+.shopnow {
+    background: #0b0b0b;
+    background-image: url(../images/shopbg.jpg);
+    width: 100%;
+    padding-bottom: 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rowshop {
+    text-align: left;
+    width: 100%;
+    padding-left: 8%;
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+#shoptitle1 {
+    color: white;
+    font-size: 4em;
+    font-family: Teko;
+    line-height: 0.6;
+    padding-left: 4%;
+}
+
+#shoptitle2 {
+    color: white;
+    font-size: 12em;
+    font-family: Teko;
+    line-height: 0.6;
+    padding-left: 4%;
+}
+
+.buynow {
+    padding-left: 6%;
+    width: 18%;
+}
+.buyoption{
+    padding-left: 10%;
+}
+
+a {
+    color: #0c0c0c;
+}
+
+a:focus, a:hover {
+    color: aqua;
+}
+
+.shoptext {
+    margin: 0;
+    padding-left: 7%;
+    color: white;
+    font-family: "Open Sans Hebrew";
+    font-weight: 700;
+    font-size: 1.4em;
+    padding-bottom: 2%;
+}
+
+.specsmodal {
+    width: 65%;
+}
+
+.newbutton {
+    color: #fff;
+    background-color: #000000;
+    border-color: #ffffff;
+    border-radius: 29px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0a0a0a;
+    border-color: grey;
+}
+
+
+div.aboutFlo {
+    font-size: 1.9em;
+    font-family: News Cycle;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #131313;
+}
+
+.navbar-right {
+    font-family: "news cycle";
+    font-size: 20px;
+    padding-right: 4%;
+    padding-top: 2%;
+}
+
+#return-to-top {
+    z-index: 1;
+}
+
+@media (max-width: 1140px) {
+    .meetFlo {
+
+    }
+
+    #meet {
+        font-size: 4em;
+    }
+
+    #flowMo {
+        font-size: 6em;
+    }
+    #shoptitle1 {
+
+        padding-top: 0%;
+    }
+    #description {
+        font-size: 15px;
+    }
+}
+
+/*media queris*/
+@media (max-width: 768px) {
+    .imgwidthfix {
+        width: 100%;
+    }
+
+    .newbutton {
+        margin-left: 75%;
+    }
+
+
+    #shoptitle1 {
+        font-size: 2em;
+    }
+
+    #shoptitle2 {
+        font-size: 5em;
+        font-family: Teko;
+    }
+
+    .shoptext {
+        font-size: 1em;
+    }
+
+    .brandlogo {
+        width: 52%;
+        margin-top: -8px;
+    }
+
+    .navbar-brand > img {
+        width: 52%;
+        padding-left: 12%;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+        background-color: rgba(255, 255, 255, 0.71);
+    }
+
+    .backgroundImg {
+        background-attachment: fixed;
+        background-position: center left;
+    }
+
+    div.aboutFlo {
+        font-size: 1.4em;
+        width: 80%;
+    }
+
+    .meetFlo {
+        margin-top: 24%;
+    }
+
+    #meet {
+        font-size: 2em;
+    }
+
+    #flowMo {
+        font-size: 3.5em;
+    }
+
+    .imgbtn {
+        width: 75%;
+    }
+
+    #description {
+        display: none;
+    }
+
+    .aboutwidth {
+        width: 100%;
+    }
+    .shopetext{
+        font-size:0.8em;
+    }
+    #shoptitle1{
+        display: none;
+    }
+    #shoptitle2{
+        display: none;
+    }
+    .newbutton{
+        display: none;
+    }
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/* Extra Things */
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3 i {
+    color: #444;
 }

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>FlowMotion™</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,153 +21,257 @@
 </head>
 <body>
 
+<a href="javascript:" id="return-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
 <div class="backgroundImg">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="./images/logo.png">
-                </a>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#features">FEATURES</a></li>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="#">SUPPORT</a></li>
-                </ul>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a class="navbar-brand" href="#"><img class="brandlogo" src="images/flowlogo.png"></a>
             </div>
-        </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#apps">APP</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
+
+
+
     <div class="jumbotron meetFlo">
-        <span class="meet"> Meet </span> <br>
-        <span class="flowMo"> Flowmotion </span> <br>
+        <span id="meet"> Meet </span> <br>
+        <span id="flowMo"> Flowmotion </span> <br>
         <div class="aboutFlo">Capture smooth cinematic videos with your smartphone. Auto-follow tracking, motion
-            time-lapse, and so much more.
+            time-lapse, and so much more
         </div>
     </div>
 </div>
 
 
-<div class="whatsflow">
+<div class="whatsflow" id="about">
     <div class="container">
-        <div class="col-xs-6">
-            <h2>What's FlowMotion™?</h2>
-            <p>It’s hard to capture smooth video with your smartphone, we’ve all been there. You think you captured the perfect moment, but it ends up as a crappy memory.
+        <div class="col-xs-6 aboutwidth">
+            <h2 id="whatstitle">What's FlowMotion™?</h2>
+            <p id="description">It’s hard to capture smooth video with your smartphone, we’ve all been there. You think you captured the perfect moment, but it ends up as a crappy memory.
                 We're FlowMotion and as adventurers, travelers and techies, we believe that great moments should be captured in the best possible way.
                 That’s why we made FlowMotion™ ONE - the world’s most versatile smartphone stabilizer.</p>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 aboutwidth">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="vids/whatsflow.mp4"></iframe>
+                <video controls muted autoplay class="embed-responsive-item" src="vids/whatsflow.mp4"></video>
             </div>
 
         </div>
     </div>
 
 </div>
+
 
 <!--features block-->
 <div class="features" id="features">
-    <div class="container">
-        <div class="row">
-            <h4>Features</h4>
-            <div class="col-md-3"> <a href="#feature1" class="html5lightbox" data-width=800 data-height=800><img class="imgwidth" src="images/feature1.png"></a></div>
-            <div class="col-md-3"><a href="#feature2" class="html5lightbox" data-width=800 data-height=800><img class="imgwidth" src="images/feature2.png"></a></div>
-            <div class="col-md-3"><a href="#feature3" class="html5lightbox" data-width=800 data-height=800><img class="imgwidth" src="images/feature3.png"></a></div>
-            <div class="col-md-3"> <a href="#feature4" class="html5lightbox" data-width=800 data-height=800><img class="imgwidth" src="images/feature4.png"></a></div>
+    <div class="container centeredCont">
+        <img class="appImgText imgwidthfix" src="images/featuresblock.png">
+        <div class="row featurerow"><!-- Button trigger modal -->
+            <img src="images/feature1.png" class="col-md-3 imgbtn" data-toggle="modal" data-target="#feature1">
+            <img src="images/feature2.png" class="col-md-3 imgbtn" data-toggle="modal" data-target="#feature2">
+            <img src="images/feature3.png" class="col-md-3 imgbtn" data-toggle="modal" data-target="#feature3">
+            <img src="images/feature4.png" class="col-md-3 imgbtn" data-toggle="modal" data-target="#feature4">
         </div>
     </div>
 
 </div>
 
-
-<!--hidden content for features-->
-
-<div id="feature1" style="display:none;">
-    <div class="lightboxcontainer">
-        <div class="lightbox">
-            <img class="innerpivclightbox" src="images/feature1inner.png">
-        </div>
-        <div class="lightboxleft">
-            <div class="divtext">
-                <p class="divdescription">FlowMotion™ ONE eliminates camera shake so you can capture every moment in
-                    perfect quality. </p>
+<!-- Modal -->
+<div class="modal fade" id="feature1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img class="innerpivclightbox" src="images/feature1inner.png">
+            </div>
+            <div class="modal-body">
+                <div class="divtext">
+                    <p class="divdescription">FlowMotion™ ONE eliminates camera shake so you can capture every moment in
+                        perfect quality. </p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls muted class="embed-responsive-item" src="vids/shaking.mp4?html5=1"></video>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div class="lightboxright">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="vids/shaking.mp4"></iframe>
-            </div>
-        </div>
-        <div style="clear:both;"></div>
     </div>
 </div>
 
-<div id="feature2" style="display:none;">
-    <div class="lightboxcontainer">
-        <div class="lightbox">
-            <img class="innerpivclightbox" src="images/feature2inner.png">
-        </div>
-        <div class="lightboxleft">
-            <div class="divtext">
-                <p class="divdescription">FlowMotion™ ONE only weighs 300g and fits in your pocket. Simply detach the
-                    grip and fold the stabilizer. So, basiclly, you can take it EVERYWHERE!</p>
+<!-- Modal -->
+<div class="modal fade" id="feature2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img class="innerpivclightbox" src="images/feature2inner.png">
+            </div>
+            <div class="modal-body">
+                <div class="divtext">
+                    <p class="divdescription">FlowMotion™ ONE only weighs 300g and fits in your pocket. Simply detach the
+                        grip and fold the stabilizer. So, basiclly, you can take it EVERYWHERE!</p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls muted class="embed-responsive-item" src="vids/pocket2.mp4"></video>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div class="lightboxright">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="vids/pocket2.mp4"></iframe>
-            </div>
-        </div>
-        <div style="clear:both;"></div>
     </div>
 </div>
 
-<div id="feature3" style="display:none;">
-    <div class="lightboxcontainer">
-        <div class="lightbox">
-            <img class="innerpivclightbox" src="images/feature3inner.png">
-        </div>
-        <div class="lightboxleft">
-            <div class="divtext">
-                <p class="divdescription">Advanced auto follow technology built into the FlowMotion™ app allows you to always have YOU, or someone you care about in focus. Simply mark the person on the screen, and ONE will follow and keep them in the frame, no matter how they move. </p>
+<!-- Modal -->
+<div class="modal fade" id="feature3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img class="innerpivclightbox" src="images/feature3inner.png">
+            </div>
+            <div class="modal-body">
+                <div class="divtext">
+                    <p class="divdescription">Advanced auto follow technology built into the FlowMotion™ app allows you to always have YOU, or someone you care about in focus. Simply mark the person on the screen, and ONE will follow and keep them in the frame, no matter how they move. </p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls muted class="embed-responsive-item" src="vids/tracking.mp4"></video>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div class="lightboxright">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="vids/tracking.mp4"></iframe>
-            </div>
-        </div>
-        <div style="clear:both;"></div>
     </div>
 </div>
 
-<div id="feature4" style="display:none;">
-    <div class="lightboxcontainer">
-        <div class="lightbox">
-            <img class="innerpivclightbox" src="images/feature4inner.png">
-        </div>
-        <div class="lightboxleft">
-            <div class="divtext">
-                <p class="divdescription">FlowMotion™ ONE eliminates camera shake so you can capture every moment in
-                    perfect quality. </p>
+<!-- Modal -->
+<div class="modal fade" id="feature4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img class="innerpivclightbox" src="images/feature4inner.png">
+            </div>
+            <div class="modal-body">
+                <div class="divtext">
+                    <p class="divdescription">FlowMotion™ ONE eliminates camera shake so you can capture every moment in
+                        perfect quality. </p>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video controls muted class="embed-responsive-item" src="vids/timelaps.mp4"></video>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <div class="lightboxright">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="vids/timelaps.mp4"></iframe>
-            </div>
-        </div>
-        <div style="clear:both;"></div>
     </div>
 </div>
 
+
+
+<div class="container shopnow" id="shop">
+
+    <div class="row">
+        <div class="rowshop">
+            <h1 id="shoptitle1">GET YOURS</h1>
+            <h1 id="shoptitle2">TODAY</h1>
+            <p class="shoptext">GET ONE for ONLY $199<br>Save $100 off the planned $299 MSRP.</p>
+<div class="buyoption">
+    <button type="button" class="btn btn-primary btn-lg newbutton" data-toggle="modal" data-target="#specs">Specs</button>
+    <a href="https://www.kickstarter.com/projects/1003718989/flowmotion-smartphone-stabilizer-the-end-of-shaky"><img class="buynow" src="images/paypalexpress.png"></a>
+
+    </div>
+
+    </div>
+</div>
+
+<!-- Modal SPECS-->
+<div class="modal fade" id="specs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog specsmodal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h1>SPECS</h1>
+            </div>
+            <div class="modal-body">
+                <div class="divtext">
+<img src="images/specsfull.jpg">
+                </div>
+
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="appImg" id="apps">
+    <img class="appImgText imgwidthfix" src="images/flowmotionApp.png">
+    <img class="imgwidthfix" src="images/flowmotionIphone.png">
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+           <a href="https://goo.gl/P6L3c4"><img src="images/appstore.png"></a>
+            <a href="https://goo.gl/g17ic4"><img src="images/googlestore.png"></a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+<div class="iconList centeredCont">
+    <ul>
+        <a href="https://www.facebook.com/FlowMotionTech/" class="icons"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.kickstarter.com/projects/1003718989/flowmotion-smartphone-stabilizer-the-end-of-shaky" class="icons"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/flowmotion/" class="icons"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+    </ul>
+</div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script> src="js/jquery.min.js"</script>
+<script src="js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="html5lightbox/jquery.js"></script>
-<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+<script src="https://use.fontawesome.com/60507a3a40.js"></script>
+<script src="js/scrollarrow.js"></script>
+
 </body>
 </html>
